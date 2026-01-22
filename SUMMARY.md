@@ -3,6 +3,7 @@
 ## Getting Started
 
 * [How to Install](README.md)
+* [Fuzzy Macro vs Existance Macro](getting-started/fuzzy-macro-vs-existance-macro.md)
 
 ## System Settings
 
