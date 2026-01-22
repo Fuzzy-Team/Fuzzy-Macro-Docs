@@ -8,7 +8,7 @@ Press the update button in the macro, and it will detect a new version and auto-
 
 **Moving from Existance Macro:**
 
-1. Download the latest zip from this link: https://github.com/Fuzzy-Team/Fuzzy-Macro/archive/refs/heads/main.zip
+1. Download the latest zip from this link: [https://github.com/Fuzzy-Team/Fuzzy-Macro/archive/refs/heads/main.zip](https://github.com/Fuzzy-Team/Fuzzy-Macro/archive/refs/heads/main.zip)
 2. Unzip the file
 3. Delete the settings folder from this unzipped folder
 4. Close Existance Macro if you haven't already
