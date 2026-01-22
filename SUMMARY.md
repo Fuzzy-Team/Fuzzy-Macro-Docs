@@ -15,14 +15,14 @@
 * [Disable Roblox scaling](roblox-settings/disable-roblox-scaling.md)
 * [Disable game mode](roblox-settings/disable-game-mode.md)
 * [Roblox Settings](roblox-settings/roblox-settings.md)
-* [Discord Webhook Setup](roblox-settings/discord-webhook-setup.md)
 
 ## Macro Settings
 
 * [Important settings](macro-settings/important-settings.md)
+* [Private Server Link](macro-settings/private-server-link.md)
 
 ## Discord Setup (optional) <a href="#discord-setup" id="discord-setup"></a>
 
-* [Stream setup](discord-setup/stream-setup.md)
+* [Discord Webhook Setup](discord-setup/discord-webhook-setup.md)
 * [Discord Bot Setup](discord-setup/discord-bot-setup.md)
-* [Private Server Link](discord-setup/private-server-link.md)
+* [Stream setup](discord-setup/stream-setup.md)

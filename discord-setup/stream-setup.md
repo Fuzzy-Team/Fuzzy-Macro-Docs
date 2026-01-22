@@ -8,25 +8,19 @@ The stream allows the macro to stream your screen in real-time through a link. T
 
 Download Homebrew:
 
-https://brew.sh/
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 {% endstep %}
 
 {% step %}
 ### Install cloudflared
 
-Open a new terminal and run one of the commands below (only one of them will work on your system):
-
-{% hint style="info" %}
-Run only the command that matches your Homebrew installation path.
-{% endhint %}
+Open a new terminal and run the command below:
 
 {% code title="Command (Apple Silicon / Homebrew installed in /opt/homebrew)" %}
 ```
-```
-{% endcode %}
-
-{% code title="Command (Intel / Homebrew installed in /usr/local)" %}
-```
+brew install cloudflared
 ```
 {% endcode %}
 {% endstep %}
@@ -40,6 +34,6 @@ In your macro GUI, under Config → Stream, check the "Enable stream" option.
 
 ### Getting the stream link
 
-When you start the macro, it will start the stream. Once the stream is ready, it will send the link via the webhook.
+When you start the macro, it will start the stream. Once the stream is ready, it will send the link via the webhook. You can also enable it to pin this stream in chat if that helps you.
 
 ![](<../.gitbook/assets/image (26)>)
