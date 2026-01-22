@@ -27,3 +27,8 @@
 * [Discord Webhook Setup](discord-setup/discord-webhook-setup.md)
 * [Discord Bot Setup](discord-setup/discord-bot-setup.md)
 * [Stream setup](discord-setup/stream-setup.md)
+
+## Dev Docs
+
+* [Pattern Creation Guide](dev-docs/pattern-creation-guide.md)
+* [Path Creation Guide](dev-docs/path-creation-guide.md)
