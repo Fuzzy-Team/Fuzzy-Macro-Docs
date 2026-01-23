@@ -32,3 +32,7 @@
 
 * [Pattern Creation Guide](dev-docs/pattern-creation-guide.md)
 * [Path Creation Guide](dev-docs/path-creation-guide.md)
+
+***
+
+* [Running the Macro](running-the-macro.md)

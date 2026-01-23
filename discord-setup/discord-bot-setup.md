@@ -20,13 +20,13 @@ python3 -m pip install --upgrade certifi
 {% step %}
 ### Create a new application
 
-![image](../.gitbook/assets/image)
+![image](<../.gitbook/assets/image (3)>)
 
 Go to [https://discord.com/developers/applications](https://discord.com/developers/applications) and click on “New Application” (top right).
 
 Put in a name, tick the checkbox, and create.
 
-![image](<../.gitbook/assets/image (1)>)
+![image](<../.gitbook/assets/image (1) (1)>)
 {% endstep %}
 
 {% step %}
@@ -36,13 +36,13 @@ Copy the application ID (it is required later).
 {% endstep %}
 
 {% step %}
-![image](<../.gitbook/assets/image (2)>)
+![image](<../.gitbook/assets/image (2) (1)>)
 
 ### Configure the bot
 
 In the “Settings” sidebar, click on Bot.
 
-![image](<../.gitbook/assets/image (3)>)
+![image](<../.gitbook/assets/image (3) (1)>)
 
 Scroll down to “Privileged Gateway Intents,” check all of them, and save changes.
 {% endstep %}
