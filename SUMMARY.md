@@ -19,6 +19,7 @@
 
 ## Macro Settings
 
+* [Running the Macro](macro-settings/running-the-macro.md)
 * [Important settings](macro-settings/important-settings.md)
 * [Private Server Link](macro-settings/private-server-link.md)
 
@@ -32,7 +33,3 @@
 
 * [Pattern Creation Guide](dev-docs/pattern-creation-guide.md)
 * [Path Creation Guide](dev-docs/path-creation-guide.md)
-
-***
-
-* [Running the Macro](running-the-macro.md)

@@ -12,7 +12,7 @@ circle-exclamation
 **IMPORTANT:** The `run_macro.command` The file has to stay in the macro folder. Moving it outside the folder will cause the macro to break.
 {% endhint %}
 
-![](.gitbook/assets/image)
+![](../.gitbook/assets/image)
 
 #### Errors when opening the macro
 
@@ -20,13 +20,13 @@ There are mainly two different errors:
 
 **Error: Unidentified Developer**
 
-![](<.gitbook/assets/image (1)>)
+![](<../.gitbook/assets/image (1)>)
 
 To fix this, right click `run_macro.command` and press Open.
 
 **Error: Could not verify it is free of malware**
 
-![](<.gitbook/assets/image (2)>)
+![](<../.gitbook/assets/image (2)>)
 
 {% stepper %}
 {% step %}
