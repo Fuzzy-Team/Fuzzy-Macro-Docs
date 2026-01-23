@@ -15,6 +15,10 @@ Press the update button in the macro, and it will detect a new version and auto-
 5. Delete all files in your original macro folder EXCEPT settings
 6. Move all the files from the unzipped folder into your old macro folder
 
+{% hint style="info" %}
+**Note: When migrating, it currently does not add any of the new Fuzzy patterns**
+{% endhint %}
+
 **Fresh Install:**
 
 To do so, open Terminal and paste this command:
