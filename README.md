@@ -12,8 +12,12 @@ Press the update button in the macro, and it will detect a new version and auto-
 
     <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 2. Move this new file into the folder of your macro
-3. Then open it by double-clicking
-4. Follow the migration assistant, and all of your data from Existance will now be migrated to Fuzzy Macro. You will use the same folder, but to start the macro, you instead open a file called "run\_macro.command".
+3.  Open a terminal window and run `cd "name of your folder your macro is in"` then run this:
+
+    <pre><code><strong>sudo chmod +x migrate_from_existance.command
+    </strong></code></pre>
+4. Then open it by double-clicking
+5. Follow the migration assistant, and all of your data from Existance will now be migrated to Fuzzy Macro. You will use the same folder, but to start the macro, you instead open a file called "run\_macro.command".
 
 {% hint style="info" %}
 **Note: When migrating, it currently does not add any of the new Fuzzy patterns**
