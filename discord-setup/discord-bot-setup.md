@@ -54,10 +54,10 @@ Scroll down to “Privileged Gateway Intents,” check all of them, and save cha
 
 Edit and copy the following link into a web browser (replace with your application ID):
 
-https://discord.com/oauth2/authorize?client\_id=**APPLICATIONID**\&permissions=68608\&scope=bot
+https://discord.com/oauth2/authorize?client\_id=**APPLICATIONID**\&permissions=537390144\&scope=bot
 
 {% hint style="info" %}
-For example: https://discord.com/oauth2/authorize?client\_id=1238906\&permissions=68608\&scope=bot
+For example: https://discord.com/oauth2/authorize?client\_id=1238906\&permissions=537390144\&scope=bot
 {% endhint %}
 {% endstep %}
 
