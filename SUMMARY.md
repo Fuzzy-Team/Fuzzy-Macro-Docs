@@ -3,7 +3,6 @@
 ## Getting Started
 
 * [How to Install](README.md)
-* [Fuzzy Macro vs Existance Macro](getting-started/fuzzy-macro-vs-existance-macro.md)
 
 ## System Settings
 
@@ -28,6 +27,10 @@
 * [Discord Webhook Setup](discord-setup/discord-webhook-setup.md)
 * [Discord Bot Setup](discord-setup/discord-bot-setup.md)
 * [Stream setup](discord-setup/stream-setup.md)
+
+## Other
+
+* [Fuzzy Macro vs Existance Macro](other/fuzzy-macro-vs-existance-macro.md)
 
 ## Dev Docs
 
