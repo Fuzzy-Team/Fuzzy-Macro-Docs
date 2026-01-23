@@ -78,5 +78,5 @@ Fuzzy Macro builds upon Existance Macro with:
 ### Getting Help
 
 * Discord: [https://discord.gg/rGRVG8Rpsb](https://discord.gg/rGRVG8Rpsb)
-* Patterns/Path Making Docs: https://github.com/Fuzzy-Team/Fuzzy-Macro/tree/main/dev\_docs
+* Patterns/Path Making Docs: [https://fuzzy-team.gitbook.io/fuzzy-macro/dev-docs/pattern-creation-guide](https://fuzzy-team.gitbook.io/fuzzy-macro/dev-docs/pattern-creation-guide)
 * Issues: Report on GitHub or in Discord

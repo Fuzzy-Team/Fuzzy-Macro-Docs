@@ -7,8 +7,6 @@ Before you start the macro, make sure you have done the following things:
 * Claim a hive before starting the macro
 
 {% hint style="warning" %}
-circle-exclamation
-
 **IMPORTANT:** The `run_macro.command` The file has to stay in the macro folder. Moving it outside the folder will cause the macro to break.
 {% endhint %}
 
@@ -22,7 +20,7 @@ There are mainly two different errors:
 
 ![](<../.gitbook/assets/image (1)>)
 
-To fix this, right click `run_macro.command` and press Open.
+To fix this, right-click `run_macro.command` and press Open.
 
 **Error: Could not verify it is free of malware**
 
