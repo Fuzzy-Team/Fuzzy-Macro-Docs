@@ -8,7 +8,9 @@ Press the update button in the macro, and it will detect a new version and auto-
 
 **Moving from Existance Macro:**
 
-1. Download this file: [https://raw.githubusercontent.com/Fuzzy-Team/macro-auto-install/refs/heads/main/migrate\_from\_existance.command](https://raw.githubusercontent.com/Fuzzy-Team/macro-auto-install/refs/heads/main/migrate_from_existance.command) (Visit link, right click, choose save as, then rename the file to `migrate_from_existance.command` this is to remove the .txt ending.)
+1.  Download this file: [https://github.com/Fuzzy-Team/macro-auto-install/blob/main/migrate\_from\_existance.command](https://github.com/Fuzzy-Team/macro-auto-install/blob/main/migrate_from_existance.command) (Visit link, and click the download button)<br>
+
+    <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 2. Move this new file into the folder of your macro
 3. Then open it by double-clicking
 4. Follow the migration assistant, and all of your data from Existance will now be migrated to Fuzzy Macro. You will use the same folder, but to start the macro, you instead open a file called "run\_macro.command".
