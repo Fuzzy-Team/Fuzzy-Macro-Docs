@@ -1,7 +1,7 @@
 # Disable game mode
 
 {% hint style="warning" %}
-For macOS 14.0 (Sonoma) with Apple (M1, M2, etc.) chips only
+For macOS 14.0+ (Sonoma) only
 {% endhint %}
 
 {% stepper %}

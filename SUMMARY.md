@@ -6,7 +6,6 @@
 
 ## System Settings
 
-* [Terminal Permissions](system-settings/terminal-permissions.md)
 * [Display Color](system-settings/display-color.md)
 * [Keyboard](system-settings/keyboard.md)
 
@@ -21,6 +20,10 @@
 * [Running the Macro](macro-settings/running-the-macro.md)
 * [Important settings](macro-settings/important-settings.md)
 * [Private Server Link](macro-settings/private-server-link.md)
+
+## Common Fixes
+
+* [Terminal Permissions](common-fixes/terminal-permissions.md)
 
 ## Discord Setup (optional) <a href="#discord-setup" id="discord-setup"></a>
 

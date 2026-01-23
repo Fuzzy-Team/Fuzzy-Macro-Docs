@@ -1,3 +1,9 @@
+---
+description: >-
+  This could be the solution if the macro is failing to detect what is on
+  screen.
+---
+
 # Terminal Permissions
 
 {% hint style="info" %}

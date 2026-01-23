@@ -165,7 +165,7 @@ self.keyboard.press("space")      # Jump
 ```python
 self.keyboard.press(",")          # Rotate left
 self.keyboard.press(".")          # Rotate right
-self. keyboard.press("pageup")     # Rotate up
+self.keyboard.press("pageup")     # Rotate up
 self.keyboard.press("pagedown")   # Rotate down
 self.keyboard.press("i")          # Zoom in
 self.keyboard.press("o")          # Zoom out
@@ -900,9 +900,10 @@ Date: [Creation Date]
 
 ### Credits
 
-* **Macro Developers**: Existance, Sev, Logan
-* **Path System**: Inspired by Natro Macro
-* **Community Contributors**: Many paths created by community members
+* **Macro Inspiration:** [Natro Macro](https://github.com/NatroTeam/NatroMacro), [Stumpy Macro](https://github.com/alaninnovates/bss-macro), [Existance Macro](https://github.com/existancepy/bss-macro-py)
+* **Developers:** Logan\
+  Original Macro code: Existance
+* **Pattern Makers:** Existance, NatroTeam, tvojamamkajenic, sev, dully176, chillketchup, Electro
 
 ***
 

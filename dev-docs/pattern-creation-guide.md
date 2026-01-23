@@ -27,7 +27,7 @@ Patterns are `.py` files that execute within the macro's gather function context
 
 ```python
 # Size conversion (standard for all patterns)
-if sizeword. lower() == "xs":
+if sizeword.lower() == "xs":
     size = 0.5
 elif sizeword.lower() == "s":
     size = 1
@@ -129,13 +129,13 @@ self.keyboard.press(".")
 This pattern traces an "E" shape, ideal for rectangular fields.
 
 ```python
-if sizeword. lower() == "xs":
+if sizeword.lower() == "xs":
     size = 0.5
 elif sizeword.lower() == "s":
     size = 1
 elif sizeword.lower() == "l":
     size = 2
-elif sizeword. lower() == "xl":
+elif sizeword.lower() == "xl":
     size = 2.5
 else:
     size = 1.5
@@ -285,7 +285,7 @@ self.keyboard.walk(rightkey, stepsize * size)
 self.keyboard.walk(fwdkey, stepsize * size)
 
 # Rotate left and compensate for drift
-self.keyboard. press(rotleft)
+self.keyboard.press(rotleft)
 self.keyboard.press(rotleft)
 sleep(0.05)
 
@@ -471,7 +471,7 @@ for _ in range(width):
     # Lateral shift
     self.keyboard.walk(tclrkey, 0.3 * size)
     # Backward sweep
-    self.keyboard. walk(afcfbkey, 2.0 * size)
+    self.keyboard.walk(afcfbkey, 2.0 * size)
     # Lateral shift
     self.keyboard.walk(tclrkey, 0.3 * size)
 ```
@@ -563,7 +563,6 @@ Width 8 → Maximum repetitions
 Pattern errors appear in:
 
 * Terminal/console output
-* Macro logs
 * Discord webhook (if enabled): "Incompatible pattern"
 
 **Common Errors**
@@ -622,6 +621,10 @@ for pattern in ahkPatterns:
     python = ahkPatternToPython(ahk)
     # Saves as .py file with same name
 ```
+
+{% hint style="warning" %}
+#### Not all AHK patterns can be converted properly, manual conversion may be needed to fix some bugs.
+{% endhint %}
 
 #### Manual Conversion
 
@@ -732,7 +735,7 @@ for i in range(width):
 ```python
 # Simple zigzag pattern (respects inversions)
 for i in range(width):
-    self.keyboard. walk(tcfbkey, 0.5 * size)
+    self.keyboard.walk(tcfbkey, 0.5 * size)
     self.keyboard.walk(tclrkey, 0.2 * size)
     self.keyboard.walk(afcfbkey, 0.5 * size)
     self.keyboard.walk(tclrkey, 0.2 * size)
@@ -796,10 +799,10 @@ else:
 
 ### Credits
 
-* **Pattern System**: Inspired by Natro Macro
-* **Pattern Makers**: Existance, NatroTeam, tvojamamkajenic, sev, dully176, chillketchup
-* **Conversion Tool**: Based on AHK patterns from Natro Macro
-* **Macro Developer**: Existance, Sev, Logan
+* **Macro Inspiration:**[Natro Macro](https://github.com/NatroTeam/NatroMacro), [Stumpy Macro](https://github.com/alaninnovates/bss-macro), [Existance Macro](https://github.com/existancepy/bss-macro-py)
+* **Developers:** Logan\
+  Original Macro code: Existance
+* **Pattern Makers:** Existance, NatroTeam, tvojamamkajenic, sev, dully176, chillketchup, Electro
 
 ***
 

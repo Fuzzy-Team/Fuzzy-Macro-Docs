@@ -3,7 +3,7 @@
 Before you start the macro, make sure you have done the following things:
 
 * Make sure Roblox is in full-screen when running the macro
-* Make sure to disconnect any external monitors. They _may_ not work with the macro (only applies to laptops)
+* Make sure to disconnect any external monitors. They _may_ not work with the macro (only applies to laptops/macbooks)
 * Claim a hive before starting the macro
 
 {% hint style="warning" %}
@@ -28,7 +28,7 @@ To fix this, right-click `run_macro.command` and press Open.
 
 {% stepper %}
 {% step %}
-### Open anyway (macOS)
+### Open anyway
 
 Go to System Settings -> Privacy and Security -> scroll all the way down -> click "Open Anyway" for `run_macro.command`.
 {% endstep %}

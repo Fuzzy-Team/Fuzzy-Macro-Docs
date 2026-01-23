@@ -15,7 +15,7 @@
 * Support for Field Dice, Smooth Dice, and Loaded Dice
 * Glitter automation with separate rebuff timing
 * Wait time after gather interrupts
-* Patch by Sev (Thank you Sev)
+* Partial patch by Sev (Thank you Sev)
 
 **More Discord Bot Commands**
 
@@ -73,7 +73,7 @@ Fuzzy Macro builds upon Existance Macro with:
 * **Developer**: Logan (LaganYT)
 * **Original Code**: Existance (existancepy)
 * **Pattern Makers**: Existance, NatroTeam, tvojamamkajenic, sev, dully176, chillketchup, Electro
-* **AFB Feature**: Created by Sev
+* **AFB Feature**: Patched by Sev
 
 ### Getting Help
 
