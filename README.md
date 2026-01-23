@@ -8,12 +8,10 @@ Press the update button in the macro, and it will detect a new version and auto-
 
 **Moving from Existance Macro:**
 
-1. Download the latest zip from this link: [https://github.com/Fuzzy-Team/Fuzzy-Macro/archive/refs/heads/main.zip](https://github.com/Fuzzy-Team/Fuzzy-Macro/archive/refs/heads/main.zip)
-2. Unzip the file
-3. Delete the settings folder from this unzipped folder
-4. Close Existance Macro if you haven't already
-5. Delete all files in your original macro folder EXCEPT settings
-6. Move all the files from the unzipped folder into your old macro folder
+1. Download this file: [https://raw.githubusercontent.com/Fuzzy-Team/macro-auto-install/refs/heads/main/migrate\_from\_existance.command](https://raw.githubusercontent.com/Fuzzy-Team/macro-auto-install/refs/heads/main/migrate_from_existance.command) (Visit link, right click, choose save as, then rename the file to `migrate_from_existance.command` this is to remove the .txt ending.)
+2. Move this new file into the folder of your macro
+3. Then open it by double-clicking
+4. Follow the migration assistant, and all of your data from Existance will now be migrated to Fuzzy Macro. You will use the same folder, but to start the macro, you instead open a file called "run\_macro.command".
 
 {% hint style="info" %}
 **Note: When migrating, it currently does not add any of the new Fuzzy patterns**
@@ -30,5 +28,5 @@ Command:
 ```
 
 {% hint style="info" %}
-After running the installer, go through the rest of the pages; all pages before the Discord setup section are mandatory. The rest of the pages do not need to be done if you have used Existance Macro previously.
+After running the installer, go through the rest of the pages; all pages before the Discord setup section are mandatory. **The rest of the pages do not need to be done if you have used Existance Macro previously.**
 {% endhint %}
