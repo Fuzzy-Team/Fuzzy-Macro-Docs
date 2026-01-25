@@ -88,7 +88,7 @@ NOTE: NEVER share this token; it is like a password for a discord bot.
 {% endstep %}
 {% endstepper %}
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Note: When you first setup the bot commands make sure you fully close and reopen discord or else the commands wont show up right away (Only happens the first time you setup the bot)
 {% endhint %}
 
