@@ -16,8 +16,8 @@ Command:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Fuzzy-Team/macro-auto-install/refs/heads/main/migrate_from_existance.command)"
 ```
 
-{% hint style="info" %}
-**Note: When migrating, it currently does not add any of the new Fuzzy patterns**
+{% hint style="warning" %}
+**PLEASE make sure you select the folder of your old macro folder when prompted by Finder.**
 {% endhint %}
 
 **Fresh Install:**
