@@ -3,6 +3,7 @@
 ## Getting Started
 
 * [How to Install](README.md)
+* [Migrating from Existance Macro](getting-started/migrating-from-existance-macro.md)
 
 ## System Settings
 
