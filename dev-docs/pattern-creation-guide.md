@@ -747,8 +747,8 @@ for i in range(width):
 
 * **Pattern Inspiration**: Check existing patterns in `settings/patterns/`
 * **Natro Macro Patterns**: Many patterns are compatible with conversion
-* **Discord Community**: Share patterns and get help at https://discord.gg/3qf8bgqCVu
-* **Documentation**: https://existance-macro.gitbook.io/existance-macro-docs/
+* **Discord Community**: Share patterns and get help at [https://discord.gg/c4XM7XJjrP](https://discord.gg/c4XM7XJjrP)
+* **Documentation**: [https://fuzzy-team.gitbook.io/fuzzy-macro](https://fuzzy-team.gitbook.io/fuzzy-macro)
 
 ***
 

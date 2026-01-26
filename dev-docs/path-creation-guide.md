@@ -892,9 +892,8 @@ Date: [Creation Date]
 ### Additional Resources
 
 * **Existing Paths**: Browse `paths/` directory for examples
-* **Discord Community**: Get help at https://discord.gg/3qf8bgqCVu
-* **Documentation**: https://existance-macro.gitbook.io/existance-macro-docs/
-* **Video Guides**: Check Discord for path creation videos
+* **Discord Community**: Share patterns and get help at [https://discord.gg/c4XM7XJjrP](https://discord.gg/c4XM7XJjrP)
+* **Documentation**: [https://fuzzy-team.gitbook.io/fuzzy-macro](https://fuzzy-team.gitbook.io/fuzzy-macro)
 
 ***
 
