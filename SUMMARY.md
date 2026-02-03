@@ -7,7 +7,7 @@
 
 ## System Settings
 
-* [Display Color](system-settings/display-color.md)
+* [Display Settings](system-settings/display-settings.md)
 * [Keyboard](system-settings/keyboard.md)
 
 ## Roblox Settings
