@@ -23,7 +23,6 @@ Your screen resolution should be one of the following options for optimal perfor
 2560x1600
 2560x1440
 1920x1080
-1440x900
 1366x768
 1280x800
 ```
