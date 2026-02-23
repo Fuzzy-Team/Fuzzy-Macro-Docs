@@ -92,65 +92,40 @@ NOTE: NEVER share this token; it is like a password for a discord bot.
 Note: When you first setup the bot commands make sure you fully close and reopen discord or else the commands wont show up right away (Only happens the first time you setup the bot)
 {% endhint %}
 
-Discord Bot Commands
+#### Current bot commands - Updated 2/23/26
 
-#### 🔧 Basic Controls
-
-* `/ping`: Check if the bot is online and responsive.
-* `/start`: Start the macro gathering process.
-* `/stop`: Stop the macro entirely.
-* `/pause`: Temporarily pause the macro at the next checkpoint.
-* `/resume`: Continue running the macro from a paused state.
-* `/skip`: Skip the current task (e.g., skip a field or a specific quest).
-* `/rejoin`: Force the macro to rejoin the game.
-* `/close`: Close both the macro application and Roblox.
-
-#### 📊 Status & Monitoring
-
-* `/status`: Get the current state of the macro (Running, Paused, etc.) and the active task.
-* `/logs`: Show a list of the most recent macro actions and events.
-* `/taskqueue`: Display the current queue of enabled tasks with the active one highlighted.
-* `/screenshot`: Send a real-time screenshot of the game window.
-* `/streamurl`: Retrieve the current public stream URL if streaming is enabled.
-* `/battery`: Check the battery percentage and charging status of the host computer.
-
-#### 🌾 Field & Quest Management
-
-* `/fields`: View which fields are currently enabled for gathering.
-* `/enablefield <field>`: Enable a specific field in your gathering list.
-* `/disablefield <field>`: Disable a specific field in your gathering list.
-* `/swapfield <current> <new>`: Replace an existing field in your list with a new one.
-* `/macromode <mode>`: Switch between "Normal" (all tasks), "Quests" (only quests), and "Field" (only gathering) modes.
-* `/quests`: View the current quest configuration status.
-* `/enablequest <quest>`: Enable quests from a specific NPC (Polar Bear, Honey Bee, etc.).
-* `/disablequest <quest>`: Disable quests from a specific NPC.
-
-#### 🎁 Collectibles & Mobs
-
-* `/collectibles`: View which dispensers and collectibles are currently enabled.
-* `/enablecollectible <item>`: Enable a specific collectible or dispenser task.
-* `/disablecollectible <item>`: Disable a specific collectible or dispenser task.
-* `/mobs`: View the current mob run configuration.
-* `/enablemob <mob>`: Enable a specific mob (e.g., Werewolf, Spider) for your bug runs.
-* `/disablemob <mob>`: Disable a specific mob from your bug runs.
-
-#### 🧪 Goo & Advanced Settings
-
-* `/enablegoo <field>`: Enable the use of goo in a specific field.
-* `/disablegoo <field>`: Disable the use of goo in a specific field.
-* `/goostatus`: Check the current goo status across all fields.
-* `/settings`: View a comprehensive list of all current macro settings grouped by category.
-* `/hiveslot <slot>`: Change your hive slot number (1-6).
-* `/amulet <keep/replace>`: Remotely choose to keep or replace an amulet during the selection process.
-
-#### 📁 Profile Management
-
-* `/profiles`: List all available configuration profiles.
-* `/currentprofile`: Show the name of the profile currently in use.
-* `/switchprofile <name>`: Switch to a different saved configuration profile.
-* `/createprofile <name>`: Create a new profile based on your current settings.
-* `/deleteprofile <name>`: Delete a specific profile (cannot delete the active one).
-
-#### ❓ Help
-
-* `/help`: Display a summarized list of all available commands and their usage categories.
+* `/ping` — Check if the bot is online
+* `/screenshot` — Send a screenshot of your screen
+* `/start` — Start the macro
+* `/stop` — Stop the macro
+* `/rejoin` — Make the macro rejoin the game
+* `/reset` — Reset the character and return to hive
+* `/logs` — Show recent macro actions (optionally specify count)
+* `/status` — Get the current macro status
+* `/nectar` — Show current nectar percentages (current + estimated)
+* `/amulet` — Choose to keep or replace an amulet
+* `/battery` — Get your current battery status
+* `/streamurl` — Get stream URL
+* `/close` — Close the macro and/or Roblox
+* `/mute` — Mute your Mac.
+* `/unmute` — Unmute your Mac.
+* `/disablegoo` — Disable goo for a specific field
+* `/enablegoo` — Enable goo for a specific field
+* `/goostatus` — Check goo status for a specific field
+* `/privateserver` — Get or set the configured private server link
+* `/settings` — Open settings panel
+* `/hiveslot` — Change hive slot number
+* `/fields` — View field configuration
+* `/field` — Enable or disable a field
+* `/swapfield` — Swap one field for another
+* `/quests` — View quest configuration
+* `/quest` — Enable or disable a quest
+* `/collectibles` — View collectibles configuration
+* `/collectible` — Edit collectibles configuration
+* `/mobs` — View mobs configuration
+* `/mob` — Edit mobs configuration
+* `/hiveslot` — Change your hiveslot
+* `/hourlyreport` — Sends the current hourly report
+* `/usehotbar` — Use a hotbar slot (1-7)
+* `/macromode` — Set macro mode (normal, quests, or field)
+* `/help` — Show available commands
