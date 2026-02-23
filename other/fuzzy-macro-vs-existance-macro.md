@@ -1,82 +1,58 @@
+---
+description: Please note that this comparison is not yet done.
+---
+
 # Fuzzy Macro vs Existance Macro
 
-### What's New in Fuzzy Macro
+## Fuzzy Macro vs Existance Macro
 
-**Enhanced User Interface**
-
-* **Modern Web GUI**: Complete redesign with tabbed interface and improved navigation
-* **Drag-and-Drop Task Ordering**: Easy task priority configuration
-* **Profile Management**: Switch between different configurations seamlessly
-
-**Auto Field Boost (AFB) - Fixed**
-
-* Automatically maintains glitter and dice boosts in specified fields
-* Configurable rebuff intervals
-* Support for Field Dice, Smooth Dice, and Loaded Dice
-* Glitter automation with separate rebuff timing
-* Wait time after gather interrupts
-* Partial patch by Sev (Thank you Sev)
-
-**More Discord Bot Commands**
-
-* Remote control via Discord commands
-* `/start`, `/stop`, `/pause`, `/resume` commands
-* `/fields`, `/quests`, `/mobs`, `/collectibles` status views
-* Enable/disable features remotely
-* `/swapfield` for field management
-* `/taskqueue` to view current task queue
-* `/screenshot` for game preview
-* Auto-complete for commands
-* Customizable ping categories
-
-#### New Collectibles & Tasks
-
-* Honeystorm automation
-* Sticker Printer with egg selection
-* Blender automation (3 item slots)
-* Seasonal event items (Beesmas items)
-* Mondo Buff token collection option
-* Mondo looting customization
-
-#### Quality of Life Improvements
-
-* **Task Priority System**: Drag-and-drop task ordering
-* **Profile System**: Multiple configuration profiles
-* **Pause/Resume**: Pause macro without stopping (Coming soon, a few fixes needed before release)
-* **Better Error Handling**: Improved error messages and recovery
-* **Repair Command**: Easy macro repair and update
-* **Better Optimization**: Slightly reduced resource usage
-* **GUI Theme Switcher**: Easily switch between Brown (Fuzzy) and Purple theme
-* **Max Convert Timer**: Add a timeout to prevent the macro from getting stuck when converting a balloon and the balloon is at 0
-
-### What's the Same
-
-* **Core Functionality**: Field gathering, mob killing, collecting items
-* **MacOS Only**: Both macros are designed for macOS
-* **Python-Based**: Written in Python with similar architecture
-* **Pattern System**: Uses .py pattern files for field gathering
-* **Path System**: Custom path files for navigation
-* **Basic Settings**: Hive number, move speed, sprinkler settings
-* **Private Server Support**: Both support private server links
-* **Webhook Integration**: Discord webhook notifications
-* **Regular Mobs**: Same mob types supported
-* **Stinger Hunt**: Night-time Vicious Bee hunting
-
-### Migration Notes
-
-There is a migration guide in our discord server, and a migration script coming soon.
+| Area                         | Existance Macro (existancepy/bss-macro-py)                         | Fuzzy Macro (Fuzzy-Team/Fuzzy-Macro)                                                                                                                                                                                                |
+| ---------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Project status / direction   | Original macOS Bee Swarm macro baseline                            | Continuation project built on Existance; actively maintained with added systems/modules                                                                                                                                             |
+| Platform                     | macOS only                                                         | macOS only                                                                                                                                                                                                                          |
+| Core macro functionality     | Field gathering, mob killing, collecting items, converting         | Same core functionality, plus more automation modules and QoL safeguards                                                                                                                                                            |
+| Language / architecture      | Python backend + HTML/CSS/JS GUI                                   | Same general architecture; expanded feature set and GUI tooling                                                                                                                                                                     |
+| Patterns / paths             | Uses pattern files for field gathering + path files for navigation | Same pattern/path approach; more patterns/behavior supported                                                                                                                                                                        |
+| Settings compatibility       | Baseline settings structure                                        | Designed to feel familiar; “transition is easy” (settings/config idea remains similar)                                                                                                                                              |
+| Private server support       | Yes                                                                | Yes                                                                                                                                                                                                                                 |
+| Discord webhooks             | Yes (notifications)                                                | Yes, plus more granular ping categories and more event coverage                                                                                                                                                                     |
+| Discord remote control       | Limited / not a focus                                              | Major feature: remote control via Discord bot commands; more command surface and status views                                                                                                                                       |
+| Discord commands (examples)  | N/A / fewer                                                        | More commands and remote actions (examples you listed: `/start`, `/stop`, `/pause`, `/resume`, `/screenshot`, `/fields`, `/quests`, `/mobs`, `/collectibles`, `/swapfield`, `/taskqueue`)                                           |
+| Command UX                   | N/A                                                                | Slash-command style UX + auto-complete (as listed)                                                                                                                                                                                  |
+| Ping categories              | Basic / less granular                                              | Customizable ping categories (more control over what alerts you)                                                                                                                                                                    |
+| Auto Field Boost (AFB)       | Not present                                                        | Automatically maintains glitter + dice boosts in specified fields; configurable rebuff intervals; separate glitter timing; supports Field Dice / Smooth Dice / Loaded Dice; wait time after gather interrupts; partial patch by Sev |
+| Boost & buff automation      | More basic                                                         | Expanded (includes AFB + additional buff/boost logic)                                                                                                                                                                               |
+| Collectibles & tasks         | Core set                                                           | New collectibles/tasks: Honeystorm automation; seasonal event items (Beesmas items); more task variety                                                                                                                              |
+| Sticker Printer              | Not present                                                        | Automated Sticker Printer with egg selection                                                                                                                                                                                        |
+| Blender automation           | Not present                                                        | Blender automation (3 item slots)                                                                                                                                                                                                   |
+| Mondo Buff                   | Basic / less customizable                                          | Mondo Buff token collection option + Mondo looting customization                                                                                                                                                                    |
+| Task scheduling / priority   | More static / simpler ordering                                     | Task Priority System with drag-and-drop task ordering                                                                                                                                                                               |
+| Profiles                     | Single main config                                                 | Profile System for multiple configurations                                                                                                                                                                                          |
+| Pause/Resume                 | Stop/start focused                                                 | Pause/Resume planned/returning (listed as coming soon; fixes needed before release)                                                                                                                                                 |
+| Reliability / error handling | Baseline                                                           | Better error handling, improved recovery, clearer messages                                                                                                                                                                          |
+| Repair / updater             | Manual / less streamlined                                          | Repair command for easier macro repair/update                                                                                                                                                                                       |
+| Performance                  | Baseline                                                           | Optimization work (slightly reduced resource usage)                                                                                                                                                                                 |
+| GUI themes                   | Single look                                                        | GUI Theme Switcher (Brown “Fuzzy” vs Purple)                                                                                                                                                                                        |
+| Anti-stuck safety            | Baseline                                                           | Max Convert Timer to prevent getting stuck converting (ex: balloon at 0)                                                                                                                                                            |
+| Mobs / stinger hunt          | Regular mobs + Vicious Bee stinger hunt at night                   | Same mobs + stinger hunt; plus additional systems around events/pings                                                                                                                                                               |
+| Credits / lineage            | Created by Existance                                               | Built on Existance’s original code; developed by Logan (LaganYT) with additional contributors (e.g., Sev patch for AFB)                                                                                                             |
+| Migration                    | N/A                                                                | Migration guide in Discord; migration script coming soon (as listed)                                                                                                                                                                |
+| Help / community             | GitHub                                                             | GitHub + Discord community + GitBook docs (patterns/path making docs)                                                                                                                                                               |
 
 ### Credits
 
-Fuzzy Macro builds upon Existance Macro with:
+#### Macro Inspiration:
 
-* **Developer**: Logan (LaganYT)
-* **Original Code**: Existance (existancepy)
-* **Pattern Makers**: Existance, NatroTeam, tvojamamkajenic, sev, dully176, chillketchup, Electro
-* **AFB Feature**: Patched by Sev
+* [Natro Macro](https://github.com/NatroTeam/NatroMacro)
+* [Stumpy Macro](https://github.com/alaninnovates/bss-macro)
+* [Existance Macro](https://github.com/existancepy/bss-macro-py)
+* Developers: [Logan](https://github.com/LaganYT)
+  * Based off code written by: [Existance](https://github.com/existancepy/bss-macro-py)
+* Pattern Makers: Existance, NatroTeam, tvojamamkajenic, sev, dully176, chillketchup, Electro
 
-### Getting Help
+### Notes
 
-* Discord: [https://discord.gg/rGRVG8Rpsb](https://discord.gg/rGRVG8Rpsb)
-* Patterns/Path Making Docs: [https://fuzzy-team.gitbook.io/fuzzy-macro/dev-docs/pattern-creation-guide](https://fuzzy-team.gitbook.io/fuzzy-macro/dev-docs/pattern-creation-guide)
-* Issues: Report on GitHub or in Discord
+* This Macro is for MacOS only. Linux and Windows support are not planned, for Windows use [Natro Macro](https://github.com/NatroTeam/NatroMacro), for Linux use [BeeTuxMacro](https://github.com/painvision/BeeTuxMacro).
+* Fuzzy Macro is built on top of Existance Macro, meaning you can easily transitition to Fuzzy Macro. The settings and config works the same, think of Fuzzy Macro as a continuation project of Existance Macro.
+* The macro backend is written in Python while the frontend uses HTML/CSS/JS with eel as a communication layer.
+* Version system uses the format Major.Minor.Bugfix, with an optional letter at the end for test versions. (Ex: 1.1.0 is newer than 1.1.0a - 1.1.0a is a beta version in this case)
