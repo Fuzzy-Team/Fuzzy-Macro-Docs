@@ -1,6 +1,6 @@
 # Discord Bot Setup
 
-## Installing certificates
+## Installing certificates (macOS)
 
 {% stepper %}
 {% step %}

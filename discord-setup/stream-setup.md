@@ -1,12 +1,14 @@
 # Stream setup
 
-The stream allows the macro to stream your screen in real-time through a link. This lets you watch your macro from other devices, such as your phone while you are away.
+The stream allows the macro to stream your screen in real-time through a link. This lets you watch your macro from other devices, such as your phone, while you are away.
+
+## macOS Installation
 
 {% stepper %}
 {% step %}
 ### Download Homebrew
 
-Download Homebrew:
+Run this command in Terminal:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -23,6 +25,31 @@ Open a new terminal and run the command below:
 brew install cloudflared
 ```
 {% endcode %}
+{% endstep %}
+{% endstepper %}
+
+## Windows Installation
+
+{% stepper %}
+{% step %}
+### Download Winget
+
+Run this command in PowerShell (as Administrator):
+
+<pre class="language-ps1"><code class="lang-ps1">Invoke-WebRequest -Uri https://aka.ms/getwinget -OutFile winget.msixbundle
+<strong>Add-AppxPackage winget.msixbundle
+</strong>del winget.msixbundle
+</code></pre>
+{% endstep %}
+
+{% step %}
+### Install cloudflared
+
+Open a new command prompt window and run the command below:
+
+```bash
+winget install --id Cloudflare.cloudflared
+```
 {% endstep %}
 {% endstepper %}
 

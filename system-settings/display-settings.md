@@ -2,7 +2,7 @@
 
 ## Display Resolutions
 
-Your screen resolution should be one of the following options for optimal performance. If your screen resolution isn't one of these, it can mess up certain features like quest detection.
+Your screen resolution should be one of the following options for optimal performance. If your screen resolution isn't one of these, it can mess up certain features like planter in inventory detection. (This list is not guaranteed to work.)
 
 ```
 5120x2880
@@ -27,7 +27,7 @@ Your screen resolution should be one of the following options for optimal perfor
 1280x800
 ```
 
-## Color settings
+## Color settings (macOS)
 
 Set your color profile to "sRGB IEC61966-2.1"\
 Alternatively, set your preset to "Internet & Web (sRGB)"

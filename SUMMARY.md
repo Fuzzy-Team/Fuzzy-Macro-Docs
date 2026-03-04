@@ -1,31 +1,33 @@
 # Table of contents
 
+* [Welcome to Fuzzy Macro Docs](README.md)
+
 ## Getting Started
 
-* [How to Install](README.md)
+* [How to Install](<README (1).md>)
 * [Video - Installation Tutorial](getting-started/video-installation-tutorial.md)
-* [Migrating from Existance Macro](getting-started/migrating-from-existance-macro.md)
+* [Migrating from Existance Macro (macOS)](getting-started/migrating-from-existance-macro.md)
 
 ## System Settings
 
 * [Display Settings](system-settings/display-settings.md)
-* [Keyboard](system-settings/keyboard.md)
+* [Keyboard (macOS)](system-settings/keyboard.md)
 
 ## Roblox Settings
 
-* [Disable Roblox scaling](roblox-settings/disable-roblox-scaling.md)
-* [Disable game mode](roblox-settings/disable-game-mode.md)
+* [Disable Roblox scaling (macOS)](roblox-settings/disable-roblox-scaling.md)
+* [Disable game mode (macOS)](roblox-settings/disable-game-mode.md)
 * [Roblox Settings](roblox-settings/roblox-settings.md)
 
 ## Macro Settings
 
-* [Running the Macro](macro-settings/running-the-macro.md)
 * [Important settings](macro-settings/important-settings.md)
+* [Running the Macro](macro-settings/running-the-macro.md)
 * [Private Server Link](macro-settings/private-server-link.md)
 
 ## Common Fixes
 
-* [Terminal Permissions](common-fixes/terminal-permissions.md)
+* [Terminal Permissions (macOS)](common-fixes/terminal-permissions.md)
 
 ## Discord Setup (optional) <a href="#discord-setup" id="discord-setup"></a>
 

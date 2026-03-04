@@ -1,35 +1,28 @@
-# How to Install
+# Welcome to Fuzzy Macro Docs
 
-#### Fuzzy Macro already installed:
+Welcome! This documentation site provides everything you need to install, configure, and use the Fuzzy Macro.
 
-Press the update button in the macro, and it will detect a new version and auto-install it
+Quick links
 
-#### Moving from Existance Macro/Fresh Install
+* [Getting Started](/broken/pages/0j97ZzA4o5wotnQ8u7eL)
+* [System Settings](/broken/pages/HeJIuXtMZIKg522b52bv)
+* [Macro Settings](/broken/pages/RHEOij7r0pixvCbjcHTd)
+* [Common Fixes](/broken/pages/QqiiCuPYDuEQsGtjrprS)
+* [Discord Setup](/broken/pages/ym6dy4ixhpq0SXQLva1i)
+* [**Our NEW Website**](https://fuzzymacro.com/)
 
-**Moving from Existance Macro:**
+How to use this book
 
-To do so, open Terminal and paste this command.
+* Use the left-hand navigation to browse sections.
+* Start with the Getting Started guide if you're new.
+* Search for keywords using the GitBook search bar.
 
-Command:
+Contributing
 
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Fuzzy-Team/macro-auto-install/refs/heads/main/migrate_from_existance.command)"
-```
+* Found an issue or missing content? Please [edit the repository](https://github.com/Fuzzy-Team/Fuzzy-Macro-Docs) and open a PR.
 
-{% hint style="warning" %}
-**PLEASE make sure you select the folder of your old macro folder when prompted by Finder.**
-{% endhint %}
+Need help?
 
-**Fresh Install:**
+* [Join our Discord](https://discord.gg/rGRVG8Rpsb) or open an issue in [the repo](https://github.com/Fuzzy-Team/Fuzzy-Macro).
 
-To do so, open Terminal and paste this command.
-
-Command:
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Fuzzy-Team/macro-auto-install/refs/heads/main/fuzzy_installer.command)"
-```
-
-{% hint style="info" %}
-After running the installer, go through the rest of the pages; all pages before the Discord setup section are mandatory. **The rest of the pages do not need to be done if you have used Existance Macro previously.**
-{% endhint %}
+Enjoy using Fuzzy Macro!
