@@ -1,4 +1,14 @@
+---
+description: >-
+  This will keep your settings and patterns; this is mostly used to undo beta
+  updates that were buggy.
+---
+
 # Reinstall macro (macOS)
+
+{% hint style="danger" %}
+Please note: this command will act like you are migrating from existance macro, even though this is not true please play pretend for me.
+{% endhint %}
 
 **This is just the same command as migrating from Existance Macro**
 
@@ -14,6 +24,3 @@ Command:
 **PLEASE make sure you select the folder of your old macro folder when prompted by Finder.**
 {% endhint %}
 
-{% hint style="danger" %}
-Please note: this command will act like you are migrating from existance macro, even though this is not true please play pretend for me.
-{% endhint %}
