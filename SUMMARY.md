@@ -7,6 +7,7 @@
 * [How to Install](<README (1).md>)
 * [Video - Installation Tutorial](getting-started/video-installation-tutorial.md)
 * [Migrating from Existance Macro (macOS)](getting-started/migrating-from-existance-macro.md)
+* [Reinstall macro (macOS)](getting-started/migrating-from-existance-macro-1.md)
 
 ## System Settings
 
