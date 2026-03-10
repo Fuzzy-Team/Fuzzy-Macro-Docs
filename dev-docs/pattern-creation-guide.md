@@ -806,4 +806,4 @@ else:
 
 ***
 
-**Happy pattern making! 🐝**
+**Happy pattern making!**

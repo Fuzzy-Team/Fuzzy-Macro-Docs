@@ -37,7 +37,7 @@ paths/
 │   ├── blender.py
 │   └── ... 
 │
-├── field_to_hive/       # Return paths from fields (rarely used)
+├── field_to_hive/       # Return paths from fields
 │   └── ... 
 │
 ├── mob_runs/            # Inter-field navigation during mob runs
@@ -60,7 +60,7 @@ paths/
     │   ├── rose.py
     │   ├── cactus.py
     │   └── ...
-    └── kill_vic/        # Dodge/combat patterns for each field
+    └── kill_vic/        # combat patterns for each field
         ├── pepper.py
         ├── rose.py
         ├── cactus.py
@@ -69,16 +69,16 @@ paths/
 
 #### Path Type Details
 
-| Path Type             | Purpose                                      | Execution Context                |
-| --------------------- | -------------------------------------------- | -------------------------------- |
-| **cannon\_to\_field** | Navigate from cannon landing to field center | After `cannon()` is called       |
-| **collect**           | Walk to dispensers/collectibles              | From spawn or after `cannon()`   |
-| **field\_to\_hive**   | Return from field to hive                    | Rarely used (reset is preferred) |
-| **mob\_runs**         | Move between areas during mob combat         | After killing mob in field       |
-| **planters**          | Position for planter placement               | During planter cycles            |
-| **quests**            | Navigate to quest givers                     | During quest routines            |
-| **vic/find\_vic**     | Search field for Vicious Bee                 | During stinger hunt              |
-| **vic/kill\_vic**     | Dodge Vicious Bee attacks                    | During Vicious Bee combat        |
+| Path Type             | Purpose                                      | Execution Context              |
+| --------------------- | -------------------------------------------- | ------------------------------ |
+| **cannon\_to\_field** | Navigate from cannon landing to field center | After `cannon()` is called     |
+| **collect**           | Walk to dispensers/collectibles              | From spawn or after `cannon()` |
+| **field\_to\_hive**   | Return from field to hive                    |                                |
+| **mob\_runs**         | Move between areas during mob combat         | After killing mob in field     |
+| **planters**          | Position for planter placement               | During planter cycles          |
+| **quests**            | Navigate to quest givers                     | During quest routines          |
+| **vic/find\_vic**     | Search field for Vicious Bee                 | During stinger hunt            |
+| **vic/kill\_vic**     | Dodge Vicious Bee attacks                    | During Vicious Bee combat      |
 
 ***
 
@@ -101,13 +101,6 @@ self.keyboard.walk("w", 1.8)
 for _ in range(2):
     self.keyboard.press(".")
 ```
-
-#### Automator Workflows (.workflow) - macOS Only
-
-* Place `.workflow` files in path directories
-* Macro prioritizes `.workflow` over `.py` if both exist
-* Only works on macOS
-* Most users should use Python paths for cross-platform compatibility
 
 #### File Naming Convention
 
@@ -568,23 +561,11 @@ self.keyboard.walk("w", 4.0)  # Test - just right!
 self.keyboard.walk("w", 4.2)  # Perfect
 ```
 
-#### 9. Optional Paths
-
-Some paths are optional:
-
-```python
-# In macro code:
-self.runPath(f"mob_runs/{field}", fileMustExist=False)
-# If path doesn't exist, macro continues without error
-```
-
-For optional paths:
-
 * Create only if needed
 * Test without path first
 * Add only if it improves efficiency
 
-#### 10. Handle Field-Specific Cases
+#### 9. Handle Field-Specific Cases
 
 ```python
 # If path behavior varies by field:
@@ -906,4 +887,4 @@ Date: [Creation Date]
 
 ***
 
-**Happy path creating! 🐝**
+**Happy path creating!**&#x20;

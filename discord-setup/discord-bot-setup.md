@@ -1,6 +1,10 @@
 # Discord Bot Setup
 
-## Installing certificates (macOS)
+## Installing certificates
+
+{% hint style="info" %}
+This part should be automatically done when installing the macro, only do this step if the bot is not coming online once you open the macro.
+{% endhint %}
 
 {% stepper %}
 {% step %}
@@ -11,6 +15,10 @@ python3 -m pip install --upgrade certifi
 source $HOME/fuzzy-macro-env/bin/activate
 python3 -m pip install --upgrade certifi
 ```
+{% endstep %}
+
+{% step %}
+
 {% endstep %}
 {% endstepper %}
 
@@ -89,7 +97,7 @@ NOTE: NEVER share this token; it is like a password for a discord bot.
 {% endstepper %}
 
 {% hint style="warning" %}
-Note: When you first setup the bot commands make sure you fully close and reopen discord or else the commands wont show up right away (Only happens the first time you setup the bot)
+Note: When you first setup the bot commands make sure you fully close and reopen discord or else the commands won't show up right away (Only happens the first time you setup the bot)
 {% endhint %}
 
 #### Current bot commands - Updated 2/23/26
