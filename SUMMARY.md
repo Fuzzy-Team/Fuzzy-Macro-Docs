@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-* [How to Install](<README (1).md>)
+* [How to Install](getting-started/how-to-install.md)
 * [Video - Installation Tutorial](getting-started/video-installation-tutorial.md)
 * [Migrating from Existance Macro (macOS)](getting-started/migrating-from-existance-macro.md)
 * [Reinstall macro (macOS)](getting-started/reinstall-macro.md)
@@ -12,7 +12,7 @@
 ## System Settings
 
 * [Display Settings](system-settings/display-settings.md)
-* [Keyboard (macOS)](system-settings/keyboard.md)
+* [Keyboard Settings (macOS)](system-settings/keyboard-settings.md)
 
 ## Roblox Settings
 
@@ -38,7 +38,7 @@
 
 ## Other
 
-* [Fuzzy Macro vs Existance Macro](other/fuzzy-macro-vs-existance-macro.md)
+* [Fuzzy Macro vs Existance Macro](other/fuzzy-vs-existance.md)
 
 ## Dev Docs
 

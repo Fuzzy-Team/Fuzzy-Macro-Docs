@@ -28,13 +28,13 @@ python3 -m pip install --upgrade certifi
 {% step %}
 ### Create a new application
 
-![image](<../.gitbook/assets/image (3)>)
+<img src="../.gitbook/assets/image (3)" alt="image" width="375">
 
 Go to [https://discord.com/developers/applications](https://discord.com/developers/applications) and click on “New Application” (top right).
 
 Put in a name, tick the checkbox, and create.
 
-![image](<../.gitbook/assets/image (1) (1)>)
+<img src="../.gitbook/assets/image (1) (1)" alt="image" width="375">
 {% endstep %}
 
 {% step %}
@@ -44,19 +44,19 @@ Copy the application ID (it is required later).
 {% endstep %}
 
 {% step %}
-![image](<../.gitbook/assets/image (2) (1)>)
+<img src="../.gitbook/assets/image (2) (1)" alt="image" width="375">
 
 ### Configure the bot
 
 In the “Settings” sidebar, click on Bot.
 
-![image](<../.gitbook/assets/image (3) (1)>)
+<img src="../.gitbook/assets/image (3) (1)" alt="image" width="375">
 
 Scroll down to “Privileged Gateway Intents,” check all of them, and save changes.
 {% endstep %}
 
 {% step %}
-![image](<../.gitbook/assets/image (4)>)
+<img src="../.gitbook/assets/image (4)" alt="image" width="375">
 
 ### Generate the invite link
 
@@ -82,13 +82,13 @@ Returning to the application page, reset the bot's token and copy it.
 {% endstep %}
 
 {% step %}
-![image](<../.gitbook/assets/image (5)>)
+<img src="../.gitbook/assets/image (5)" alt="image" width="375">
 
 ### Configure the macro
 
 Launch the macro and copy the token into the 'Discord Bot Token' setting (config -> discord -> Discord Bot).&#x20;
 
-![image](<../.gitbook/assets/image (6)>)
+<img src="../.gitbook/assets/image (6)" alt="image" width="563">
 
 {% hint style="info" %}
 NOTE: NEVER share this token; it is like a password for a discord bot.
