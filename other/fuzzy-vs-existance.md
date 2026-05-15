@@ -1,34 +1,55 @@
 ---
-description: Please note that this comparison is not yet done.
+description: Please note that this comparison is constantly updating.
 ---
 
 # Fuzzy Macro vs Existance Macro
 
 ## Fuzzy Macro vs Existance Macro
 
-| Area                         | Existance Macro                                                    | Fuzzy Macro                                                                                                                                                                               |
-| ---------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Project status / direction   | Original macOS Bee Swarm macro baseline                            | Continuation project built on Existance; actively maintained with added systems/modules                                                                                                   |
-| Platform                     | macOS only                                                         | macOS and Windows                                                                                                                                                                         |
-| Core macro functionality     | Field gathering, mob killing, collecting items, converting         | Same core functionality, plus more automation modules                                                                                                                                     |
-| Language / architecture      | Python backend + HTML/CSS/JS GUI                                   | Same general architecture; expanded feature set and GUI tooling                                                                                                                           |
-| Patterns / paths             | Uses pattern files for field gathering + path files for navigation | Same pattern/path approach; more patterns/behavior supported                                                                                                                              |
-| Settings compatibility       | Baseline settings structure                                        | Designed to feel familiar; “transition is easy” (settings/config idea remains similar)                                                                                                    |
-| Private server support       | Yes                                                                | Yes                                                                                                                                                                                       |
-| Discord webhooks             | Yes                                                                | Yes, plus more granular ping categories and more event coverage                                                                                                                           |
-| Discord remote control       | Limited / not a focus                                              | Major feature: remote control via Discord bot commands; more command surface and status views                                                                                             |
-| Discord commands (examples)  | N/A / fewer                                                        | More commands and remote actions (examples you listed: `/start`, `/stop`, `/pause`, `/resume`, `/screenshot`, `/fields`, `/quests`, `/mobs`, `/collectibles`, `/swapfield`, `/taskqueue`) |
-| Collectibles & tasks         | Core set                                                           | Same core set + improvements on pathing and new honeystorm collection                                                                                                                     |
-| Task scheduling / priority   | None                                                               | Task Priority System with drag-and-drop task ordering                                                                                                                                     |
-| Profiles                     | Single main config                                                 | Profile System for multiple configurations                                                                                                                                                |
-| Pause/Resume                 | Stop/start focused                                                 | Pause/Resume added as well as Start/Stop                                                                                                                                                  |
-| Reliability / error handling | Baseline                                                           | Better error handling, improved recovery, clearer messages                                                                                                                                |
-| Update system                | Manual / less streamlined                                          | Custom update script that isn't confusing                                                                                                                                                 |
-| Performance                  | Baseline                                                           | Optimization work (slightly reduced resource usage)                                                                                                                                       |
-| GUI themes                   | Single look                                                        | GUI Theme Switcher                                                                                                                                                                        |
-| Anti-stuck safety            | Baseline                                                           | Max Convert Timer to prevent getting stuck converting (ex: balloon at 0)                                                                                                                  |
-| Mobs / stinger hunt          | Regular mobs + Vicious Bee stinger hunt at night                   | Same mobs + stinger hunt;                                                                                                                                                                 |
-| Credits / lineage            | Created by Existance                                               | Built on Existance’s original code; developed by Logan (LaganYT) with additional contributors                                                                                             |
+| Area                    | Existance Macro                                     | Fuzzy Macro                                                              |
+| ----------------------- | --------------------------------------------------- | ------------------------------------------------------------------------ |
+| Operating systems       | macOS only                                          | macOS + Windows support work/beta support                                |
+| Quest support           | Basic                                               | Brown Bear, Black Bear, Petal quests, expanded quest handling            |
+| Boss support            | No bosses                                           | King Beetle + Tunnel Bear support                                        |
+| AI support              | None                                                | AI Gather + AI sprinkler detection                                       |
+| Gather logic            | Traditional patterns                                | Many patterns and AI token chasing + customizable token priorities       |
+| Theme system            | None                                                | Multiple bee based themes                                                |
+| Update channels         | Manual                                              | Stable + Beta channels + commit-hash updates                             |
+| Update UI               | Basic                                               | Visible update progress + frontend update detection                      |
+| Auto planter system     | Basic planter logic/unreliable                      | Auto Planters V2 with degradation tracking                               |
+| Import/export systems   | None                                                | You can import/export Gather settings, planter settings, pattern imports |
+| Scheduler systems       | Simple scheduled rejoins                            | Advanced scheduled rejoins + timed macro stop                            |
+| Recovery systems        | Basic                                               | Inactive Honey Reset + whirligig fallback                                |
+| Discord bot commands    | Limited                                             | Expanded slash command ecosystem                                         |
+| Rich presence           | None                                                | Discord Rich Presence support                                            |
+| Hotbar systems          | Minimal                                             | Hotbar Buff tool + redesigned hotbar UI                                  |
+| Task management         | Simple task flow                                    | Priority queue + drag-and-drop ordering                                  |
+| Debug tooling           | Minimal                                             | Debug export tools + richer diagnostics                                  |
+| Installation system     | Older/manual flow                                   | Simplified installer + migration scripts                                 |
+| Error reporting         | Basic                                               | Crash diagnostics + signal logging                                       |
+| Scaling support         | Basic (Doesn't work on a lot of screen resolutions) | Reworked resolution/scaling handling                                     |
+| Pattern systems         | Standard field patterns                             | Hive Hub Support + many new patterns + **AI gather**                     |
+| Memory Match support    | Basic                                               | Rewritten logic with smarter tile tracking                               |
+| AFB handling            | Broken                                              | Reworked AFB logic                                                       |
+| Private server handling | Basic                                               | Share links + hive exclusion slots                                       |
+| Tools                   | None                                                | Bond calculator, Ticket calculator, Auto Clicker                         |
+| Blender support         | 3 slots                                             | 5-slot blender system                                                    |
+| Anti-stuck systems      | Minimal                                             | Max convert timers + retry systems                                       |
+| Logging systems         | Basic                                               | Better diagnostics + quieter logging                                     |
+| Beta infrastructure     | None                                                | Dedicated beta update/testing system                                     |
+| Ongoing development     | Discontinued                                        | Active development                                                       |
+
+| Metric                 | Existance Macro | Fuzzy Macro |
+| ---------------------- | --------------- | ----------- |
+| Total files            | 568             | 627         |
+| Python files           | 145             | 187         |
+| Total lines            | 21,846          | 49,256      |
+| Python source lines    | 10,531          | 25,451      |
+| Pattern files          | 9               | 23          |
+| Path files             | 104             | 107         |
+| Boss path files        | 0               | 2           |
+| Quest path files       | 6               | 8           |
+| Discord slash commands | 9               | 46          |
 
 ### Credits
 
@@ -47,3 +68,5 @@ description: Please note that this comparison is not yet done.
 * Fuzzy Macro is built on top of Existance Macro, meaning you can easily transitition to Fuzzy Macro. The settings and config works the same, think of Fuzzy Macro as a continuation project of Existance Macro.
 * The macro backend is written in Python while the frontend uses HTML/CSS/JS with eel as a communication layer.
 * Version system uses the format Major.Minor.Bugfix, with an optional letter at the end for test versions. (Ex: 1.1.0 is newer than 1.1.0a - 1.1.0a is a beta version in this case)
+
+Updated as of Fuzzy Macro version 1.2.0.
