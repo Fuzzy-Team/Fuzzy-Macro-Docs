@@ -16,7 +16,7 @@
 
 ## Roblox Settings
 
-* [Disable Roblox scaling (macOS)](roblox-settings/disable-roblox-scaling.md)
+* [Enable Roblox scaling (macOS)](roblox-settings/enable-roblox-scaling.md)
 * [Disable game mode (macOS)](roblox-settings/disable-game-mode.md)
 * [Roblox Settings](roblox-settings/roblox-settings.md)
 
