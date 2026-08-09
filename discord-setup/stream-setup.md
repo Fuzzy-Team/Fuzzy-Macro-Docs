@@ -1,4 +1,4 @@
-# Stream Setup
+# Stream setup
 
 Fuzzy Macro can share a live view of your screen through a temporary link. The link is sent to Discord when the stream starts.
 
@@ -33,7 +33,7 @@ If `winget` is not available, install it through the Microsoft Store’s **App I
 3. Start the macro. It creates the stream and posts its link to your configured Discord destination.
 4. Open the link from a trusted device to view the live screen.
 
-> Screenshot placeholder: Stream settings and Discord stream message
+> ![](<../.gitbook/assets/image (12).png>)
 
 With Discord Bot mode, you can also use `/stream enable`, `/stream disable`, `/stream status`, and `/streamurl`.
 
