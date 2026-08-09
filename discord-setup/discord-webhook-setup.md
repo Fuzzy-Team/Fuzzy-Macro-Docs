@@ -28,7 +28,7 @@ Create or select the channel that should receive macro notifications. A private 
 
 Open the channel’s settings, select **Integrations**, then select **Webhooks**. Depending on your Discord layout, you may instead reach this from **Server Settings → Integrations**.
 
-> Screenshot placeholder: Discord Integrations / Webhooks
+> ![](<../.gitbook/assets/image (3).png>)
 {% endstep %}
 
 {% step %}
@@ -36,7 +36,7 @@ Open the channel’s settings, select **Integrations**, then select **Webhooks**
 
 Select **New Webhook**, give it a recognizable name, confirm its channel, and save. Choose **Copy Webhook URL**.
 
-> Screenshot placeholder: Copy Webhook URL
+> ![](<../.gitbook/assets/image (4).png>)
 {% endstep %}
 {% endstepper %}
 
@@ -49,7 +49,7 @@ Select **New Webhook**, give it a recognizable name, confirm its channel, and sa
 
 Webhook mode uses the Webhook URL as the default destination. The macro can attach screenshots, send reports, and apply the Discord ping options, but it cannot receive commands.
 
-> Screenshot placeholder: Fuzzy Macro webhook settings
+> ![](<../.gitbook/assets/image (5).png>)
 
 ## Optional notification routing
 

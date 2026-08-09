@@ -1,7 +1,7 @@
 # Discord Bot Setup
 
 {% hint style="success" %}
-**Recommended for almost everyone.** The Discord bot can send all macro notifications to a normal Discord channel *and* gives you remote slash commands. Use a webhook only when you only want one-way notifications.
+**Recommended for almost everyone.** The Discord bot can send all macro notifications to a normal Discord channel _and_ gives you remote slash commands. Use a webhook only when you only want one-way notifications.
 {% endhint %}
 
 ## Before you start
@@ -20,7 +20,7 @@ Your bot token is a password. Never share it, post it in screenshots, or put it 
 
 Open the [Discord Developer Portal](https://discord.com/developers/applications), select **New Application**, give it a name, accept Discord’s terms, and create it.
 
-> Screenshot placeholder: New Application screen
+> ![](<../.gitbook/assets/image (6).png>)
 {% endstep %}
 
 {% step %}
@@ -30,7 +30,7 @@ In the new application, select **Bot** in the sidebar, then choose **Add Bot** i
 
 Under **Privileged Gateway Intents**, enable all three toggles—**Presence Intent**, **Server Members Intent**, and **Message Content Intent**—then save your changes. Fuzzy Macro currently starts its Discord bot with Discord’s full intent set, so leaving a privileged intent disabled can prevent the bot from connecting.
 
-> Screenshot placeholder: Bot settings screen
+> ![](<../.gitbook/assets/image (8).png>)
 {% endstep %}
 
 {% step %}
@@ -53,7 +53,7 @@ If you plan to enable **Pin Stream URL in Discord**, also grant **Manage Message
 
 Copy the generated install link, open it, select your server, and authorize the bot.
 
-> Screenshot placeholder: Guild Install scopes and permissions
+> ![](<../.gitbook/assets/image (9).png>)
 {% endstep %}
 
 {% step %}
@@ -63,7 +63,7 @@ Create a private channel such as `#fuzzy-macro`, or choose an existing channel. 
 
 Enable Discord **Developer Mode** (User Settings → Advanced), right-click the channel, and choose **Copy Channel ID**.
 
-> Screenshot placeholder: Copy Channel ID menu
+> ![](<../.gitbook/assets/image (10).png>)
 {% endstep %}
 
 {% step %}
@@ -85,7 +85,7 @@ Treat the token like your Discord password.
 
 The bot uses the Channel ID as its default destination for macro notifications. You do not need a webhook URL in bot-only mode.
 
-> Screenshot placeholder: Fuzzy Macro Discord Delivery settings
+> ![](<../.gitbook/assets/image (11).png>)
 
 ## Keep remote control private
 

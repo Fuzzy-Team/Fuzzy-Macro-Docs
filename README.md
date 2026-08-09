@@ -4,11 +4,11 @@ Welcome! This documentation site provides everything you need to install, config
 
 Quick links
 
-* [Getting Started](/broken/pages/0j97ZzA4o5wotnQ8u7eL)
-* [System Settings](/broken/pages/HeJIuXtMZIKg522b52bv)
-* [Macro Settings](/broken/pages/RHEOij7r0pixvCbjcHTd)
-* [Common Fixes](/broken/pages/QqiiCuPYDuEQsGtjrprS)
-* [Discord Setup](/broken/pages/ym6dy4ixhpq0SXQLva1i)
+* [Getting Started](https://app.gitbook.com/s/Kl9fPF4X0qmFDF4j0rMB/getting-started)
+* [System Settings](https://app.gitbook.com/s/Kl9fPF4X0qmFDF4j0rMB/system-settings)
+* [Macro Settings](https://app.gitbook.com/s/Kl9fPF4X0qmFDF4j0rMB/macro-settings)
+* [Common Fixes](https://app.gitbook.com/s/Kl9fPF4X0qmFDF4j0rMB/common-fixes)
+* [Discord Setup](https://app.gitbook.com/s/Kl9fPF4X0qmFDF4j0rMB/discord-setup)
 * [**Our NEW Website**](https://fuzzymacro.com/)
 
 How to use this book
