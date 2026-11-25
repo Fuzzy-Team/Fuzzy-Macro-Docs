@@ -41,11 +41,7 @@ If Roblox shows a join error, the macro reads the error code and reacts:
 | 256 | Server data failure, or an active ban | Retries |
 | 524 | Permission denied | Skips that link and tries the next server |
 | 429 | Too many requests | Waits 30 seconds, then retries |
-| 267 | Roblox says you are banned from this experience | Stops the macro |
-
-{% hint style="warning" %}
-Error 267 does not always mean you are banned. Roblox shows it during some Bee Swarm updates. If the macro stops on 267, check that you can join the game yourself, then start the macro again.
-{% endhint %}
+| 267 | Roblox shows this when you are kicked or the server restarts, during some Bee Swarm updates, and for bans | Stops the macro. Check that you can join the game yourself, then start the macro again |
 
 If the macro reports that you are not logged in, open the Roblox app, sign in, and start the macro again. Rejoining uses the Roblox app, so it needs a signed-in account.
 
