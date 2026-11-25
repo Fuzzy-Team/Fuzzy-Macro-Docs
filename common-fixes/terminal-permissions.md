@@ -25,6 +25,8 @@ Enable Terminal for these categories:
 
 If Terminal does not show up there, it should appear after running the macro.
 
+When you start the macro, it checks Accessibility and Screen & System Audio Recording (called Screen Recording on older macOS) and asks macOS for any that are missing. After you allow them, start the macro again.
+
 {% hint style="warning" %}
 NOTE: On older macOS versions, some of these categories may not show up, which is normal.
 {% endhint %}

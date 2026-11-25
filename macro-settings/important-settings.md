@@ -6,20 +6,20 @@
 {% step %}
 ### Set your movespeed
 
-Go to the config tab -> bss.\
+Go to Config -> Bee Swarm.\
 To check your movespeed, open the BSS settings panel and scroll down until you find the walkspeed stat.
 {% endstep %}
 
 {% step %}
-### Ensure your hive number is correct (do this every time you run the macro).
+### Ensure your preferred hive slot is correct (do this every time you run the macro).
 
-Go to the config tab -> BSS and verify the hive number.
+Go to Config -> Bee Swarm -> Hive and check Preferred Hive Slot. The macro claims that hive first, and takes the open hive closest to it if it is taken.
 {% endstep %}
 
 {% step %}
 ### Ensure your sprinkler type and hotbar slot are correct
 
-Go to the config tab -> bss and confirm the sprinkler type and hotbar slot settings.
+Go to Config -> Bee Swarm -> Hotbar Items and confirm Sprinkler Type and Sprinkler Slot. If you turned on Top Navigation, these are on the Boost tab under Hotbar Item Slots instead.
 {% endstep %}
 
 {% step %}

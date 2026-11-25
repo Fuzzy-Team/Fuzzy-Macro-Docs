@@ -622,6 +622,8 @@ for pattern in ahkPatterns:
     # Saves as .py file with same name
 ```
 
+You can also use **Import Patterns** on the Gather tab and pick `.py` or `.ahk` files. An `.ahk` file is converted right away, so you see an error immediately if it cannot be converted. At startup the macro only converts `.ahk` files that changed since the last conversion.
+
 {% hint style="warning" %}
 #### Not all AHK patterns can be converted properly, manual conversion may be needed to fix some bugs.
 {% endhint %}

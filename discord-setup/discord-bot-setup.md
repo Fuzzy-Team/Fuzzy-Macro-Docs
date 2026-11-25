@@ -28,7 +28,7 @@ Open the [Discord Developer Portal](https://discord.com/developers/applications)
 
 In the new application, select **Bot** in the sidebar, then choose **Add Bot** if Discord shows that option.
 
-Under **Privileged Gateway Intents**, enable all three toggles—**Presence Intent**, **Server Members Intent**, and **Message Content Intent**—then save your changes. Fuzzy Macro currently starts its Discord bot with Discord’s full intent set, so leaving a privileged intent disabled can prevent the bot from connecting.
+Under **Privileged Gateway Intents**, enable **Message Content Intent** and save your changes. This is the only privileged intent Fuzzy Macro uses, so **Presence Intent** and **Server Members Intent** can stay off. Without Message Content Intent the bot cannot connect.
 
 > ![](<../.gitbook/assets/image (8).png>)
 {% endstep %}
@@ -92,23 +92,26 @@ The bot uses the Channel ID as its default destination for macro notifications. 
 By default, a blank command-permission category lets anyone who can use the bot in the server run that category’s commands. For a private server with only you, that may be fine. For any shared server, restrict the categories.
 
 1. With Developer Mode still enabled, right-click your Discord user and choose **Copy User ID**.
-2. In **Config → Discord → Bot Command Permissions**, paste your user ID into each category you want to protect. Separate multiple user IDs with commas.
+2. In **Config → Discord → Advanced → Bot Command Permissions**, paste your user ID into each category you want to protect. Separate multiple user IDs with commas.
 3. At minimum, restrict **Macro Control**, **Task Interrupts**, **Configuration**, **System Actions**, **Profile Access**, and **Streaming**.
 
-The permission categories are designed around risk: observation commands include `/status` and `/screenshot`; control and configuration categories can start, stop, rejoin, or change macro settings.
+The permission categories are designed around risk: observation commands include `/status` and `/screenshot`; control and configuration categories can start, stop, rejoin, or change macro settings. Public Info (`/help`, `/ping`), Observation, and Reports are the low-risk categories.
 
 ## Useful commands
 
 Type `/help` in Discord for the command list that matches the current macro version. Common commands include:
 
-* Monitoring: `/status`, `/screenshot`, `/logs`, `/tasklist`, `/nectar`, `/battery`
-* Control: `/start`, `/stop`, `/pause`, `/resume`, `/rejoin`, `/reset`, `/skip`
-* Configuration: `/settings`, `/fields`, `/field`, `/quests`, `/quest`, `/planters`, `/mobs`, `/hiveslot`, `/macromode`
-* Reports and stream: `/hourlyreport`, `/session`, `/stream`, `/streamurl`
+* Monitoring: `/status`, `/screenshot`, `/logs`, `/tasklist`, `/cooldowns`, `/plantertimers`, `/nectar`, `/battery`, `/performance`
+* Control: `/start`, `/stop`, `/standby`, `/pause`, `/resume`, `/rejoin`, `/skipserver`, `/reset`, `/skip`, `/reroll`
+* Configuration: `/settings`, `/fields`, `/field`, `/swapfield`, `/quests`, `/quest`, `/collectibles`, `/collectible`, `/mobs`, `/mob`, `/hiveslot`, `/macromode`
+* Planters and items: `/plantertimers`, `/planterreset`, `/collectplanter`, `/usehotbar`, `/finditem`
+* Reports and stream: `/hourlyreport`, `/session`, `/vicstats`, `/stream`, `/streamurl`
+
+`/macromode` can switch between normal, alt, quests, field, bug runs, boost, resources, and vic hop. `/standby` stops the macro, quits Roblox, and keeps the Mac awake, optionally for a set time such as `30m`.
 
 ## Optional notification routing
 
-The **Notification Routes** section can send categories such as Macro, Reports, Gathering, Combat, Activities, and System to different places. In bot mode, enter a Discord **channel ID** in any route you want to override; leave it empty to use the default Channel ID.
+The **Notification Routes** section (under **Config → Discord → Advanced**) can send categories such as Macro, Reports, Gathering, Combat, Activities, Badges, and System to different places. In bot mode, enter a Discord **channel ID** in any route you want to override; leave it empty to use the default Channel ID.
 
 Use this only if you want separate channels. Most people should leave every route blank.
 
@@ -117,4 +120,5 @@ Use this only if you want separate channels. Most people should leave every rout
 * **`/ping` does not respond:** Make sure Delivery Mode includes Discord Bot, the token is current, the macro is running, and the bot has access to that channel.
 * **The slash commands are missing:** Confirm the bot was invited with both `bot` and `applications.commands`, then fully restart Discord. It may take a short time for Discord to refresh commands.
 * **Notifications do not arrive:** Confirm that Channel ID is numeric, has no extra spaces, and points to a channel the bot can view and send messages in.
+* **The macro prints “turn on Message Content Intent”:** Open the bot in the Discord Developer Portal, enable **Message Content Intent** under Privileged Gateway Intents, and restart the macro.
 * **“Missing Access” or “Missing Permissions”:** Check the channel’s permission overrides for the bot, especially View Channel, Send Messages, Embed Links, and Attach Files.

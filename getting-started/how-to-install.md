@@ -1,5 +1,5 @@
 ---
-description: This is how to install the macro on macOS or Windows.
+description: This is how to install the macro on macOS.
 ---
 
 # How to Install
@@ -10,7 +10,9 @@ Guide for migrating from Existance macro (macOS) has been moved to here: [https:
 
 ## **Installing on macOS:**
 
-To do so, open Terminal and paste this command.
+The installer works on macOS 10.12 and newer, on both Apple silicon and Intel Macs.
+
+To install, open Terminal and paste this command.
 
 Command:
 
@@ -18,19 +20,11 @@ Command:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Fuzzy-Team/macro-auto-install/refs/heads/main/fuzzy_installer.command)"
 ```
 
-## Installing on Windows (beta):
-
-Open up PowerShell (as Administrator) and paste this command:
-
-```ps1
-& ([ScriptBlock]::Create((irm "https://raw.githubusercontent.com/Fuzzy-Team/macro-auto-install/refs/heads/main/windows/installmacrob.ps1")))
-```
-
 {% hint style="warning" %}
-Windows is not yet 100% working or supported. More info here: [https://discord.gg/c4XM7XJjrP](https://discord.gg/c4XM7XJjrP)
+Fuzzy Macro 1.4.0 supports macOS only. Windows support is still in development. Follow the [Discord server](https://discord.gg/c4XM7XJjrP) for news.
 {% endhint %}
 
 {% hint style="success" %}
-After running the installer, go through the remaining pages; all pages before the Discord setup section are mandatory. **The rest of the pages do not need to be done if you have used Existance Macro previously.**
+After running the installer, go through the remaining pages; all pages before the Discord setup section are mandatory. If the installer stops with an error, fix the error it shows and run the command again. **The rest of the pages do not need to be done if you have used Existance Macro previously.**
 {% endhint %}
 

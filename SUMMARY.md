@@ -38,6 +38,7 @@
 
 ## Other
 
+* [What's new in 1.4.0](other/whats-new-in-1-4-0.md)
 * [Fuzzy Macro vs Existance Macro](other/fuzzy-vs-existance.md)
 
 ## Dev Docs
