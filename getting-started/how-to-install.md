@@ -1,5 +1,5 @@
 ---
-description: This is how to install the macro on macOS.
+description: This is how to install the macro on macOS or Windows.
 ---
 
 # How to Install
@@ -20,8 +20,16 @@ Command:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Fuzzy-Team/macro-auto-install/refs/heads/main/fuzzy_installer.command)"
 ```
 
+## Installing on Windows (beta):
+
+Open up PowerShell (as Administrator) and paste this command:
+
+```ps1
+& ([ScriptBlock]::Create((irm "https://raw.githubusercontent.com/Fuzzy-Team/macro-auto-install/refs/heads/main/windows/installmacrob.ps1")))
+```
+
 {% hint style="warning" %}
-Fuzzy Macro 1.4.0 supports macOS only. Windows support is still in development. Follow the [Discord server](https://discord.gg/c4XM7XJjrP) for news.
+Windows is not yet 100% working or supported. More info here: [https://discord.gg/c4XM7XJjrP](https://discord.gg/c4XM7XJjrP)
 {% endhint %}
 
 {% hint style="success" %}

@@ -8,7 +8,7 @@ description: Please note that this comparison is constantly updating.
 
 | Area                    | Existance Macro                                     | Fuzzy Macro                                                              |
 | ----------------------- | --------------------------------------------------- | ------------------------------------------------------------------------ |
-| Operating systems       | macOS only                                          | macOS (Windows in development)                                           |
+| Operating systems       | macOS only                                          | macOS + Windows support work/beta support                                |
 | Quest support           | Basic                                               | Brown Bear, Black Bear, Petal quests, expanded quest handling            |
 | Boss support            | No bosses                                           | King Beetle + Tunnel Bear support                                        |
 | AI support              | None                                                | AI Gather + AI sprinkler detection                                       |
@@ -53,7 +53,7 @@ description: Please note that this comparison is constantly updating.
 
 ### Notes
 
-* Fuzzy Macro supports macOS. Windows support is in development. Linux support is not planned; for Linux use [BeeTuxMacro](https://github.com/painvision/BeeTuxMacro).
+* This Macro is for MacOS only. Linux and Windows support are not planned, for Windows use [Natro Macro](https://github.com/NatroTeam/NatroMacro), for Linux use [BeeTuxMacro](https://github.com/painvision/BeeTuxMacro).
 * Fuzzy Macro is built on top of Existance Macro, meaning you can easily transitition to Fuzzy Macro. The settings and config works the same, think of Fuzzy Macro as a continuation project of Existance Macro.
 * The macro backend is written in Python while the frontend uses HTML/CSS/JS with eel as a communication layer.
 * Version system uses the format Major.Minor.Bugfix, with an optional letter at the end for test versions. (Ex: 1.1.0 is newer than 1.1.0a - 1.1.0a is a beta version in this case)
