@@ -2,7 +2,19 @@
 
 ## Display Resolutions
 
-Your screen resolution should be one of the following options for optimal performance. If your screen resolution isn't one of these, it can mess up certain features like planter in inventory detection. (This list is not guaranteed to work.)
+Your screen resolution should be one of the following options for optimal performance. If your screen resolution isn't one of these, it can mess up certain features like planter in inventory detection.
+
+Confirmed working:
+
+```
+2560x1440
+1920x1080
+1440x900
+1366x768
+1280x800
+```
+
+Resolutions from the older list. These have not been recently tested, so they are not guaranteed to work:
 
 ```
 5120x2880
@@ -21,15 +33,11 @@ Your screen resolution should be one of the following options for optimal perfor
 2880x1800
 3440x1440
 2560x1600
-2560x1440
-1920x1080
-1366x768
-1280x800
 ```
 
 ## 1080p virtual display (macOS 13 or later)
 
-If your screen is not one of the resolutions above, turn on Config -> App Settings -> Display -> Use 1080p virtual display. The macro runs Roblox with a 1920×1080 game area so detection stays consistent on Retina screens. The change applies the next time you start the macro.
+If your screen is not one of the confirmed resolutions above, turn on Config -> App Settings -> Display -> Use 1080p virtual display. The macro runs Roblox with a 1920×1080 game area so detection stays consistent on Retina screens. The change applies the next time you start the macro.
 
 ## Color settings (macOS)
 
