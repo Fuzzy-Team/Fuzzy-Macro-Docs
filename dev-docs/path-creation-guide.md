@@ -14,7 +14,7 @@ Paths are navigation scripts that move your character from one location to anoth
 * Fields → Dispensers/Collectibles
 * Field → Field (during mob runs)
 * Any location → Quest givers
-* Vicious Bee search and combat
+* Vicious Bee travel and combat
 
 Paths are stored as Python scripts (`.py`) or macOS Automator workflows (`.workflow`) in subdirectories under the `paths/` folder.
 
@@ -24,11 +24,16 @@ Paths are stored as Python scripts (`.py`) or macOS Automator workflows (`.workf
 
 ```
 paths/
+├── boss/                # Boss and challenge routes (ant_challenge, king_beetle, tunnel_bear)
+│
 ├── cannon_to_field/     # From cannon landing spot to field center
 │   ├── sunflower.py
 │   ├── dandelion.py
 │   ├── mushroom.py
 │   └── ... 
+│
+├── ramp_to_field/       # From the hive ramp to a field, used by Walk to Fields
+│   └── ...
 │
 ├── collect/             # Navigation to dispensers and collectibles
 │   ├── wealth_clock.py
@@ -40,6 +45,15 @@ paths/
 ├── field_to_hive/       # Return paths from fields
 │   └── ... 
 │
+├── field_to_hive_fast/  # Shorter return paths, used by Faster Walk Home
+│   └── ...
+│
+├── field_to_field/      # Straight walks between fields after placing a planter
+│   └── <from field>/<to field>.py
+│
+├── planter_to_center/   # From a planter spot to the center of its field
+│   └── ...
+│
 ├── mob_runs/            # Inter-field navigation during mob runs
 │   ├── clover.py
 │   ├── spider.py
@@ -49,18 +63,17 @@ paths/
 │   └── ...
 │
 ├── quests/              # Quest giver navigation
-│   ├── polar_bear.py
-│   ├── bucko_bee.py
-│   ├── riley_bee.py
+│   ├── polar bear.py
+│   ├── bucko bee.py
+│   ├── riley bee.py
 │   └── ...
 │
 └── vic/                 # Vicious Bee hunt paths
-    ├── find_vic/        # Search patterns for each field
-    │   ├── pepper.py
-    │   ├── rose.py
-    │   ├── cactus.py
+    ├── travel/          # Walks between the Vic Hop fields
+    │   ├── cactus_to_rose.py
+    │   ├── edge_to_spider.py
     │   └── ...
-    └── kill_vic/        # combat patterns for each field
+    └── kill_vic/        # Combat paths for each field
         ├── pepper.py
         ├── rose.py
         ├── cactus.py
@@ -72,13 +85,18 @@ paths/
 | Path Type             | Purpose                                      | Execution Context              |
 | --------------------- | -------------------------------------------- | ------------------------------ |
 | **cannon\_to\_field** | Navigate from cannon landing to field center | After `cannon()` is called     |
+| **ramp\_to\_field**   | Navigate from the hive ramp to field center  | When Walk to Fields is on, and always for Mushroom |
 | **collect**           | Walk to dispensers/collectibles              | From spawn or after `cannon()` |
 | **field\_to\_hive**   | Return from field to hive                    |                                |
+| **field\_to\_hive\_fast** | Shorter return from field to hive       | When Faster Walk Home is on and a file exists for the field |
+| **field\_to\_field**  | Walk from one field's center to another      | Right after a planter is placed (starts facing north at the center of the first field) |
+| **planter\_to\_center** | Walk from a planter spot to its field center | Before a field\_to\_field path |
+| **boss**              | Boss and challenge routes                    | During King Beetle, Tunnel Bear and Ant Challenge |
 | **mob\_runs**         | Move between areas during mob combat         | After killing mob in field     |
 | **planters**          | Position for planter placement               | During planter cycles          |
 | **quests**            | Navigate to quest givers                     | During quest routines          |
-| **vic/find\_vic**     | Search field for Vicious Bee                 | During stinger hunt            |
-| **vic/kill\_vic**     | Dodge Vicious Bee attacks                    | During Vicious Bee combat      |
+| **vic/travel**        | Walk between the Vic Hop fields              | During Vic Hop                 |
+| **vic/kill\_vic**     | Fight Vicious Bee once it is found           | During Vicious Bee combat      |
 
 ***
 
@@ -104,13 +122,13 @@ for _ in range(2):
 
 #### File Naming Convention
 
-Path files must match the field or collectible name (lowercase with underscores):
+Path files must match the field or collectible name in lowercase. Field and quest giver names keep their spaces; collectible names use underscores:
 
 ```python
 # Field paths
 sunflower.py          # For "Sunflower" field
-blue_flower.py        # For "Blue Flower" field
-mountain_top.py       # For "Mountain Top" field
+blue flower.py        # For "Blue Flower" field
+mountain top.py       # For "Mountain Top" field
 
 # Collectible paths
 wealth_clock.py       # For Wealth Clock
@@ -180,13 +198,16 @@ moveSpeedFactor = 18 / self.setdat["movespeed"]
 self.keyboard.walk("w", 2.0 * moveSpeedFactor)
 ```
 
-#### Special Variables for Vicious Bee Paths
+#### Vicious Bee Paths
 
-In `vic/find_vic/` paths, a special function is available:
+Files in `vic/` wrap their steps in `def run(self):` and end with `result = run(self)`. The macro reads `result` when the path finishes. For `vic/kill_vic/` paths, a true `result` means Vicious Bee was defeated. A `vic/travel/` path can return `False` to stop the hunt early. These paths use helpers made for Vic Hop:
 
 ```python
-vicSearchWalk(key, duration)      # Walk with Vic detection interrupt
-# The macro provides this function - it stops path if Vic is found
+self.viciousWalk('w', 24)       # Walk with the Vic Hop key timing
+self.viciousJump()
+self.viciousActivateGlider()
+self.checkIfVicSummoned()       # False when Vicious Bee is not there
+self.viciousKillPattern()       # Fight pattern, returns True when Vic is defeated
 ```
 
 ***
@@ -344,72 +365,33 @@ self.keyboard.walk("a", 0.5)
 
 ***
 
-#### Example 6: Vicious Bee Search Path
+#### Example 6: Vicious Bee Combat Path
 
-**File:** `paths/vic/find_vic/pepper. py`
+**File:** `paths/vic/kill_vic/rose.py` (shortened)
 
 ```python
-# Search pattern for Vicious Bee in Pepper Patch
-# Uses special vicSearchWalk function
+def run(self):
+    self.viciousWalk('w', 24)
+    self.viciousJump()
+    sleep(0.34)
+    self.viciousWalk('wd', 6.5)
+    self.viciousActivateGlider()
+    sleep(1.0)
+    self.disableShiftLock()
+    if not self.checkIfVicSummoned():
+        return False
+    self.viciousWalk('s', 8)
+    return self.viciousKillPattern()
 
-# Sweep pattern across field
-vicSearchWalk("w", 2.0)
-vicSearchWalk("d", 1.0)
-vicSearchWalk("s", 4.0)
-vicSearchWalk("d", 1.0)
-vicSearchWalk("w", 4.0)
-vicSearchWalk("d", 1.0)
-vicSearchWalk("s", 4.0)
-vicSearchWalk("d", 1.0)
-vicSearchWalk("w", 4.0)
 
-# Continue sweeping... 
-vicSearchWalk("a", 3.0)
-vicSearchWalk("s", 2.0)
+result = run(self)
 ```
 
 **How it works:**
 
-* `vicSearchWalk()` interrupts if Vicious Bee is detected
-* Sweeps back and forth across field
-* Covers entire field systematically
-
-***
-
-#### Example 7: Vicious Bee Combat Path
-
-**File:** `paths/vic/kill_vic/rose.py`
-
-```python
-# Dodge pattern for Vicious Bee in Rose Field
-# Macro executes line-by-line, checking for defeat/death
-
-# Circular dodge pattern
-self.keyboard.walk("w", 2.0)
-self.keyboard.walk("a", 1.5)
-self.keyboard.walk("s", 2.0)
-self.keyboard.walk("d", 1.5)
-
-# Figure-8 pattern
-for _ in range(2):
-    self.keyboard.walk("w", 1.5)
-    self.keyboard.press(".")  # Rotate while moving
-    sleep(0.1)
-    self.keyboard.walk("w", 1.5)
-    self.keyboard.press(",")
-    sleep(0.1)
-
-# Side-to-side dodging
-for _ in range(3):
-    self.keyboard.walk("a", 1.0)
-    self.keyboard.walk("d", 1.0)
-```
-
-**How it works:**
-
-* Keeps character moving to avoid Vicious Bee attacks
-* Macro checks after each line if Vic is defeated or player died
-* Repeats pattern until combat ends
+* Travels to the spot where Vicious Bee spawns in Rose Field
+* Stops with `False` if Vicious Bee is not summoned
+* Runs the kill pattern and returns whether Vicious Bee was defeated
 
 ***
 
@@ -749,22 +731,6 @@ for _ in range(4):
 self.keyboard.walk("w", 3.0)
 self.keyboard.press(".")  # Turn 45° right
 self.keyboard.walk("w", 2.0)
-```
-
-#### Handling Interrupts in Vic Paths
-
-Vic search paths need special handling:
-
-```python
-# In find_vic paths:
-# Check if Vic found between movements
-try:
-    vicSearchWalk("w", 2.0)
-    vicSearchWalk("d", 1.0)
-    vicSearchWalk("s", 2.0)
-except VicStopPathException:
-    # Vic found, path will exit
-    pass
 ```
 
 ***

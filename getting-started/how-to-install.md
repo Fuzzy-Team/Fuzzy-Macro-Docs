@@ -10,7 +10,9 @@ Guide for migrating from Existance macro (macOS) has been moved to here: [https:
 
 ## **Installing on macOS:**
 
-To do so, open Terminal and paste this command.
+The installer works on macOS 10.12 and newer, on both Apple silicon and Intel Macs.
+
+To install, open Terminal and paste this command.
 
 Command:
 
@@ -31,6 +33,6 @@ Windows is not yet 100% working or supported. More info here: [https://discord.g
 {% endhint %}
 
 {% hint style="success" %}
-After running the installer, go through the remaining pages; all pages before the Discord setup section are mandatory. **The rest of the pages do not need to be done if you have used Existance Macro previously.**
+After running the installer, go through the remaining pages; all pages before the Discord setup section are mandatory. If the installer stops with an error, fix the error it shows and run the command again. **The rest of the pages do not need to be done if you have used Existance Macro previously.**
 {% endhint %}
 

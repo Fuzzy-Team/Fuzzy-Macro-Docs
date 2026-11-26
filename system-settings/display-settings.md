@@ -27,6 +27,10 @@ Your screen resolution should be one of the following options for optimal perfor
 1280x800
 ```
 
+## 1080p virtual display (macOS 13 or later)
+
+If your screen is not one of the resolutions above, turn on Config -> App Settings -> Display -> Use 1080p virtual display. The macro runs Roblox with a 1920×1080 game area so detection stays consistent on Retina screens. The change applies the next time you start the macro.
+
 ## Color settings (macOS)
 
 Set your color profile to "sRGB IEC61966-2.1"\

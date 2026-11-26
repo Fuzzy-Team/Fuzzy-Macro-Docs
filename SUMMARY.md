@@ -25,10 +25,16 @@
 * [Important settings](macro-settings/important-settings.md)
 * [Running the Macro](macro-settings/running-the-macro.md)
 * [Private Server Link](macro-settings/private-server-link.md)
+* [Your first gather](macro-settings/your-first-gather.md)
+* [Macro modes and task order](macro-settings/macro-modes.md)
+* [Set up and maintain planters](macro-settings/planters.md)
+* [Blender craft queue](macro-settings/blender-craft-queue.md)
+* [Standalone tools](macro-settings/standalone-tools.md)
 
 ## Common Fixes
 
 * [Terminal Permissions (macOS)](common-fixes/terminal-permissions.md)
+* [Troubleshooting and getting support](common-fixes/troubleshooting.md)
 
 ## Discord Setup (optional) <a href="#discord-setup" id="discord-setup"></a>
 

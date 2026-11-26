@@ -53,7 +53,7 @@ Webhook mode uses the Webhook URL as the default destination. The macro can atta
 
 ## Optional notification routing
 
-In **Notification Routes**, paste a webhook URL into any category you want to send elsewhere. Categories left blank fall back to the default Webhook URL.
+In **Notification Routes** (under **Config → Discord → Advanced**), paste a webhook URL into any category you want to send elsewhere. Categories left blank fall back to the default Webhook URL.
 
 Route values must be a full `https://` webhook URL in webhook mode. Do not paste a channel ID unless you are using the Discord bot.
 

@@ -28,14 +28,14 @@ If `winget` is not available, install it through the Microsoft Store’s **App I
 
 ## Enable the stream
 
-1. In Fuzzy Macro, open **Config → Stream**.
+1. In Fuzzy Macro, open **Config → Discord** and find the **Stream** section.
 2. Enable **Enable Stream**.
 3. Start the macro. It creates the stream and posts its link to your configured Discord destination.
 4. Open the link from a trusted device to view the live screen.
 
 > ![](<../.gitbook/assets/image (12).png>)
 
-With Discord Bot mode, you can also use `/stream enable`, `/stream disable`, `/stream status`, and `/streamurl`.
+With Discord Bot mode, you can also use `/stream enable`, `/stream disable`, `/stream status`, and `/streamurl`. The bot's replies to those commands are visible only to you.
 
 ## Pinning the stream link
 

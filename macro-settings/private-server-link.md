@@ -12,7 +12,7 @@ Open Bee Swarm Simulator -> Servers -> click the three dots on your server -> Co
 {% step %}
 ### Open up macro
 
-Go to the config tab and paste in the url.
+Go to Config -> Rejoin & Recovery -> Joining and paste the link into Private Server Link.
 {% endstep %}
 {% endstepper %}
 
